@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/logo.svg">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Learn web development</title>
+</head>
+<body>
+    <header>
+        <div class="headear-wrapper">
+            <div class="logo-wrapper">
+                <img src="imgs/logo.svg" alt="">
+            </div>
+            <div  class="menu-wrapper button" onclick="addOpenClass()">
+                <img src="imgs/menu.svg" alt="">
+            </div>
+            <div id="menu" class="complete-menu button">
+                <div onclick="removeOpenClass()" class="close-wrapper">
+                    <img src="imgs/close.svg" alt="">
+                </div>
+                <ul>
+                    <li onclick="removeOpenClass()" class='nav-item'>
+                        <a href="#home">home</a>
+                    </li>
+
+                    <li onclick="removeOpenClass()" class='nav-item'>
+                        <a href="#HTML">HTML</a>
+                    </li>
+                    <li  onclick="removeOpenClass()"class='nav-item'>
+                        <a href="#CSS">CSS</a>
+                    </li>
+                    <li  onclick="removeOpenClass()" class='nav-item'>
+                        <a href="#JAVASCRIPT">JAVASCRIPT</a>
+                    </li>
+
+                </ul>
+            </div>    
+           
+
+        </div>
+    </header>
+    <main>
+        <section id="home" class="first">
+            <h1>
+                How to start learning web development!
+            </h1>
+            <p>
+                Are you trying to learn web development as a beginner, but not sure where to start? There are a ton of resources out there. But right now, all you need is the basics of web development– a general explanation with some direction on where to go next.
+            </p>
+        </section>
+        <section id='Back-End' class="second">
+            <h2>The basic Front-end</h2>
+            <div class="second-wrapper">
+                <div id="HTML"class="html">
+                    <div class="html-img-wrapper">
+                        <img id="html-img" src="imgs/html.png" alt="">
+                    </div>
+                    <div class="html-p-wrapper">
+                        <p>HTML, or HyperText Markup Language, is the foundation of all websites. It’s the main file type that is loaded in your browser when you look at a website. The HTML file contains all the content on the page, and it uses tags to denote different types of content.</p>
+                    </div>
+
+                </div>
+                <div id="CSS"class="css">
+                    <div class="css-img-wrapper">
+                        <img id="css-img" src="imgs/css.png" alt="">
+                    </div>
+                    <div class="css-p-wrapper">
+                        <p>CSS, or Cascading Style Sheets, lets you style that HTML content so it looks nice and fancy. You can add colors, custom fonts, and layout the elements of your website however you want them to look. You can even create animations and shapes with CSS!</p>
+                    </div>
+
+                </div>
+                <div id="JAVASCRIPT"class="javascript">
+                    <div class="java-img-wrapper">
+                        <img id="java-img" src="imgs/js.png" alt="">
+                    </div>
+                    <div class="java-p-wrapper">
+                        <p>JavaScript is a programming language that was designed to run in the browser. Using JavaScript, you can make your website dynamic, meaning it will respond to different inputs from the user, or other sources.</p>
+                    </div>
+
+
+                </div>
+            </div>
+           
+            
+        </section>
+
+
+    </main>
+    <footer>
+       <div>
+        <p>This Webpage was created by Jose Luis Charria</p>
+        </div>  
+    </footer>
+   
+</body>
+</html>

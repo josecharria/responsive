@@ -1,0 +1,319 @@
+@font-face{
+    font-family:  'myFont';
+    src: url('../imgs/CaviarDreams_BoldItalic.ttf');
+}
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: myFont, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100vw;
+}
+header{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 1;  
+
+    .headear-wrapper{
+        display: flex;
+        height: 7rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: rgba(255, 255, 255,0.6) 2px solid;
+        background-color:  rgba(10, 40, 94,0.8);
+
+        .complete-menu{
+            height: 100vh;
+            width: 25rem;
+            background-color: rgba(10, 40, 94,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: -25rem;
+            z-index: 1500;
+            transition: all 650ms ease-in-out;
+
+        
+            .nav-item{
+                margin: 3rem 0;
+               
+                text-transform: uppercase;
+                
+
+                a{
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color:  rgba(255, 255, 255, 1); ;
+                }
+                
+
+            }
+            .close-wrapper{
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+              }    
+        }
+        .opened{    
+            right: 0;
+        }
+
+        
+
+
+      
+    } 
+    img{
+        width: 3rem;
+        height: auto;
+        padding-left: 1rem;
+        margin-right: 1rem;
+    }
+    .button{
+        cursor: pointer;
+    }
+   
+  
+}
+
+main{
+
+    
+    .first{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+       
+        background-image: url('../imgs/background\ -\ copia.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        h1{
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+
+            font-size: 3rem;
+            margin-top: 8rem;
+
+            color: rgba(255, 255, 255, 1);
+            margin-bottom: 5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        p{
+            display: block;
+            text-align: justify;
+            font-size: 1.6rem;
+            padding: 4rem;
+            color:rgba(255, 255, 255, 1);
+           
+        }
+    }
+    .second{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 2.2rem;
+            margin: 2rem;
+        }
+
+        .second-wrapper{
+     
+            .html, .css,.javascript{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: rgba(10, 40, 94,0.5) solid 3px;
+            }
+
+            #java-img{
+                width: 6rem;
+                padding: 1rem;
+            }
+            #css-img{
+                width: 4rem;
+                padding: 1rem;
+            }
+    
+            #html-img{
+                width: 5rem;
+                padding: 1rem;
+            }
+    
+        
+            p{
+                font-size: 1.6rem;
+                margin: 4rem 2rem 4rem 2rem;
+                text-align: justify;
+            }
+    
+            
+
+        }
+       
+           
+
+        
+    }
+
+}
+footer{
+    background-color: rgba(10, 40, 94,0.9);
+    height: 7rem;
+    margin: 0 auto;
+        div{
+            display: table;
+            height: 7rem;
+            width: 100%;
+         
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                display: table-cell;
+                vertical-align: middle;
+                color: rgba(255, 255, 255, 1);
+                font-size: 1.2rem;
+               
+    
+            }
+
+        }
+ 
+
+    
+}
+@media all and (min-width:576px){
+    main{
+        .first{
+            h1{
+                font-size: 4rem;
+                margin-right: 35rem;
+            }
+            p{
+              
+                font-size: 2rem;
+                margin-right: 25rem;
+            }
+        }
+        .second{
+            h2{
+                font-size: 3rem;
+            }
+            .second-wrapper{
+                p{
+                    font-size: 2rem
+                }
+
+            }
+           
+        }
+    }
+    header{
+        .headear-wrapper{
+            
+            
+            .menu-wrapper{
+                display: none;
+            }
+            .complete-menu{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 7rem;
+                width: 100%;
+          
+                background-color: transparent;
+                .nav-item{
+
+                    display: inline-block;
+                    margin-right: 3rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    
+                    
+                }
+                .nav-item:hover{
+                    border-bottom: rgba(255, 255, 255, 1) solid 2px;
+                    
+                }
+
+                
+
+
+ 
+                .close-wrapper{
+                    display: none;
+                  }    
+            }
+     
+            
+    
+    
+          
+        } 
+    }
+
+}
+@media all and (min-width:992px){
+    main{
+        .first{
+            h1{
+                font-size: 6rem;
+                margin-right: 35rem;
+            }
+            p{
+              
+                font-size: 2.5rem;
+                margin-right: 25rem;
+            }
+        }
+        .second{
+            h2{
+                font-size: 3rem;
+            }
+            .second-wrapper{
+                display: flex;
+
+                .html, .css,.javascript{
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+               
+
+                p{
+                    font-size: 2rem
+                }
+
+            }
+           
+        }
+    }
+   
+
+}
+
+    
+

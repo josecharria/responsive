@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'myFont';
+  src: url("../imgs/CaviarDreams_BoldItalic.ttf");
+}
+
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: myFont, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+}
+
+header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+header .headear-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: rgba(255, 255, 255, 0.6) 2px solid;
+  background-color: rgba(10, 40, 94, 0.8);
+}
+
+header .headear-wrapper .complete-menu {
+  height: 100vh;
+  width: 25rem;
+  background-color: rgba(10, 40, 94, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -25rem;
+  z-index: 1500;
+  -webkit-transition: all 650ms ease-in-out;
+  transition: all 650ms ease-in-out;
+}
+
+header .headear-wrapper .complete-menu .nav-item {
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+
+header .headear-wrapper .complete-menu .nav-item a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+}
+
+header .headear-wrapper .complete-menu .close-wrapper {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+header .headear-wrapper .opened {
+  right: 0;
+}
+
+header img {
+  width: 3rem;
+  height: auto;
+  padding-left: 1rem;
+  margin-right: 1rem;
+}
+
+header .button {
+  cursor: pointer;
+}
+
+main .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  background-image: url("../imgs/background - copia.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .first h1 {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 3rem;
+  margin-top: 8rem;
+  color: white;
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+main .first p {
+  display: block;
+  text-align: justify;
+  font-size: 1.6rem;
+  padding: 4rem;
+  color: white;
+}
+
+main .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .second h2 {
+  font-size: 2.2rem;
+  margin: 2rem;
+}
+
+main .second .second-wrapper .html, main .second .second-wrapper .css, main .second .second-wrapper .javascript {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: rgba(10, 40, 94, 0.5) solid 3px;
+}
+
+main .second .second-wrapper #java-img {
+  width: 6rem;
+  padding: 1rem;
+}
+
+main .second .second-wrapper #css-img {
+  width: 4rem;
+  padding: 1rem;
+}
+
+main .second .second-wrapper #html-img {
+  width: 5rem;
+  padding: 1rem;
+}
+
+main .second .second-wrapper p {
+  font-size: 1.6rem;
+  margin: 4rem 2rem 4rem 2rem;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgba(10, 40, 94, 0.9);
+  height: 7rem;
+  margin: 0 auto;
+}
+
+footer div {
+  display: table;
+  height: 7rem;
+  width: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div p {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media all and (min-width: 576px) {
+  main .first h1 {
+    font-size: 4rem;
+    margin-right: 35rem;
+  }
+  main .first p {
+    font-size: 2rem;
+    margin-right: 25rem;
+  }
+  main .second h2 {
+    font-size: 3rem;
+  }
+  main .second .second-wrapper p {
+    font-size: 2rem;
+  }
+  header .headear-wrapper .menu-wrapper {
+    display: none;
+  }
+  header .headear-wrapper .complete-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 7rem;
+    width: 100%;
+    background-color: transparent;
+  }
+  header .headear-wrapper .complete-menu .nav-item {
+    display: inline-block;
+    margin-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  header .headear-wrapper .complete-menu .nav-item:hover {
+    border-bottom: white solid 2px;
+  }
+  header .headear-wrapper .complete-menu .close-wrapper {
+    display: none;
+  }
+}
+
+@media all and (min-width: 992px) {
+  main .first h1 {
+    font-size: 6rem;
+    margin-right: 35rem;
+  }
+  main .first p {
+    font-size: 2.5rem;
+    margin-right: 25rem;
+  }
+  main .second h2 {
+    font-size: 3rem;
+  }
+  main .second .second-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .second .second-wrapper .html, main .second .second-wrapper .css, main .second .second-wrapper .javascript {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .second .second-wrapper p {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
