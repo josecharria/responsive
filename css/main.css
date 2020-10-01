@@ -231,11 +231,11 @@ footer div p {
 @media all and (min-width: 576px) {
   main .first h1 {
     font-size: 4rem;
-    margin-right: 35rem;
+    margin-right: 15rem;
   }
   main .first p {
     font-size: 2rem;
-    margin-right: 25rem;
+    margin-right: 10rem;
   }
   main .second h2 {
     font-size: 3rem;
