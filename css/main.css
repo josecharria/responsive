@@ -232,12 +232,13 @@ footer div p {
   main .first h1 {
     font-size: 4rem;
     margin-bottom: 0;
-    margin-right: 4rem;
+    margin-right: 2rem;
   }
   main .first p {
     margin-top: 0;
+    padding-top: 1rem;
     font-size: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   main .second h2 {
     font-size: 3rem;
